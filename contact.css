@@ -1,0 +1,116 @@
+.formbox
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox form
+{
+    position: relative;
+    width: 100%;
+    padding: 0 250px;
+}
+
+.formbox form h2
+{
+    background: linear-gradient(to right, #f33446, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-left: 260px;
+}
+
+.formbox form .inputbox
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.formbox form .inputbox:last-child
+{
+    margin-bottom: 0px;
+}
+
+.formbox form .inputbox input,
+.formbox form .inputbox textarea
+{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid #fff;
+    resize: none;
+}
+
+.formbox form .inputbox textarea
+{
+    height: 100px;
+}
+
+.formbox form .inputbox input[type="submit"]
+{
+    padding: 8px 20px;
+    margin-top: 0px;
+    width: 125px;
+    cursor: pointer;
+    background: #f33446;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 340px;
+    transform-origin: center;
+    opacity: 1;
+}
+
+.formbox form .inputbox input[type="submit"]:focus
+{
+    background: #fff;
+    color: #f33446;
+}
+
+.formbox form .inputbox span
+{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.formbox form .inputbox input:focus ~ span,
+.formbox form .inputbox textarea:focus ~ span,
+.formbox form .inputbox input:valid ~ span,
+.formbox form .inputbox textarea:valid ~ span
+{
+    transform: translateY(-24px);
+    color: #f33446;
+    font-size: 15px;
+
+}
+
+.formbox form .inputbox input:focus,
+.formbox form .inputbox textarea:focus,
+.formbox form .inputbox input:valid,
+.formbox form .inputbox textarea:valid
+{
+    border-bottom-color: #f33446;
+}
